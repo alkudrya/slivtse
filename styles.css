@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  border-bottom: solid 1px rgb(179, 179, 179);
+  padding: 1em;
+}
+
+img {
+  max-width: 20px;
+}
+
+.letter {
+  font-family: "Noto Sans Mono", monospace;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  margin: clamp(3px, 0.1em, 1em);
+  border: solid 1px rgb(179, 179, 179);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.letter p {
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.guess {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
