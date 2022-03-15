@@ -19,13 +19,38 @@
       </div>
     </header>
     <div class="grid"></div>
-    <div class="hint"></div>
     <div class="keyboard"></div>
     <div class="ending">
-      <img id="cross" src="./images/cancel.png" alt="close" />
+      <img class="cross" src="./images/cancel.png" alt="close" />
       <h2></h2>
       <h3></h3>
       <button>ще раз</button>
+    </div>
+    <div class="rules">
+      <div class="nameCross">
+        <h2>Як грати</h2>
+        <img class="cross" src="./images/cancel.png" alt="close" />
+      </div>
+
+      <h3>
+        Вгадай слово з шести спроб. <br />
+        <br />Кожна спроба має бути словом з 5 букв. Тисни ентер, щоб
+        підтвердити спробу. <br /><br />
+        Після кожного слова кольори літер підкажуть як близько спроба до
+        загаданого слова:
+      </h3>
+      <div class="example">
+        <div class="box green">A</div>
+        <p>- літера на своєму місці</p>
+      </div>
+      <div class="example">
+        <div class="box yellow">О</div>
+        <p>- літера є в слові, але не в цьому місці</p>
+      </div>
+      <div class="example">
+        <div class="box grey">П</div>
+        <p>- літери немає в слові</p>
+      </div>
     </div>
     <script src="words.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
