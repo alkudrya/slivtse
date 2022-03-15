@@ -40,7 +40,6 @@ header {
 img {
   max-width: 20px;
   cursor: pointer;
-  height: fit-content;
 }
 
 .letter {
