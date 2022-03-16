@@ -81,7 +81,6 @@ img {
 .keyboard {
   position: relative;
   bottom: 10px;
-  width: min(570px 100vw);
 }
 
 .keyboard p {
@@ -180,18 +179,6 @@ img {
   font-family: "Noto Sans Mono", monospace;
 }
 
-@media (max-width: 1000px) {
-  .rules {
-    width: 80%;
-    left: 10%;
-  }
-
-  .ending {
-    width: 80%;
-    left: 10%;
-  }
-}
-
 .ending img {
   position: absolute;
   right: 30px;
@@ -244,4 +231,108 @@ button:active {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media screen and (orientation: portrait) and (max-device-width: 600px) {
+  .ending {
+    width: 80%;
+    left: 10%;
+  }
+
+  .keyboard p {
+    margin: 0.5vw;
+    padding: 1.5vw;
+    font-size: 5vw;
+  }
+
+  .specialKey {
+    height: 10vw;
+  }
+
+  .grid {
+    height: 50vh;
+  }
+
+  .guess {
+    width: calc(50vh - 50vh / 6);
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .rules {
+    padding: 10px;
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (orientation: portrait) {
+  img {
+    max-width: 40px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .letter p {
+    font-size: 2em;
+  }
+
+  header {
+    height: 5em;
+  }
+
+  .rules {
+    width: 70%;
+    left: 10%;
+  }
+
+  .ending {
+    width: 80%;
+    left: 10%;
+  }
+
+  .keyboard p {
+    margin: 0.5vw;
+    padding: 1.5vw;
+    font-size: 40px;
+  }
+
+  .specialKey {
+    height: calc(40px + 4.3vw);
+  }
+
+  .grid {
+    height: 60vh;
+  }
+
+  .guess {
+    width: calc(60vh - 60vh / 6);
+  }
+
+  .rules {
+    padding: 20px;
+    width: 80%;
+    left: 10%;
+  }
+
+  .box {
+    width: 3em;
+    height: 3em;
+  }
 }
